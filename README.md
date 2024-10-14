@@ -8,4 +8,4 @@ The **Mashup Generator** is a Python-based web application that allows users to 
 - Email the merged audio file as a zip attachment.
 
 ## Interface
-<img src="static/Interface1.png" alt="Interface" width="55%" height="55%">
+<img src="static/interface2.png" alt="Interface" width="55%" height="55%">
