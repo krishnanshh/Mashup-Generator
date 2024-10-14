@@ -90,7 +90,7 @@ def zip_audio_file(file_path, zip_name='static/merged_audio.zip'):
 def send_email_with_attachment(email, zip_path):
     try:
         msg = Message('Your Mashup Audio', recipients=[email])
-        msg.body = 'Attached is the zip file containing your generated mashup audio.'
+        msg.body = 'Attached is the zip file containing your generated mashup audio. Thank you for using. Feel free to reach out for any type of issues faced'
         with open(zip_path, 'rb') as f:
             msg.attach('merged_audio.zip', 'application/zip', f.read())
         mail.send(msg)
@@ -147,9 +147,11 @@ def generate_mashup():
             # Send email with the zip file
             zip_path = 'static/merged_audio.zip'
             send_email_with_attachment(email, zip_path)
-
+            
             # Redirect to the success page
             return jsonify({"message": "Mashup generated and emailed successfully!"}), 200
+
+
 
     return "No audio files processed.", 500
 
