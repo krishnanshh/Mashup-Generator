@@ -13,9 +13,9 @@ app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'igenerator57@gmail.com'  # Your email
-app.config['MAIL_PASSWORD'] = 'zfuvwfmfmlsdlxdz'  # Your app password
-app.config['MAIL_DEFAULT_SENDER'] = 'igenerator57@gmail.com'  # Your email
+app.config['MAIL_USERNAME'] = 'kverma_be22@thapar.edu'  # Your email
+app.config['MAIL_PASSWORD'] = 'evemlshjzemyikch'  # Your app password
+app.config['MAIL_DEFAULT_SENDER'] = 'kverma_be22@thapar.edu'  # Your email
 mail = Mail(app)
 
 # Function to download videos using yt-dlp
@@ -153,5 +153,5 @@ def generate_mashup():
 
     return "No audio files processed.", 500
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)
